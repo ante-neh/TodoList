@@ -1,46 +1,43 @@
-# Getting Started with Create React App
+##TodoList App in React and TypeScript
+This is a simple TodoList application built using React and TypeScript. The app allows you to add, edit, delete, and mark tasks as completed. It also includes drag-and-drop functionality to reorder tasks and move completed tasks to a separate section.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###Instructions for Running the App
+To run the TodoList app locally on your machine, follow these steps:
 
-## Available Scripts
+Make sure you have Node.js and npm (Node Package Manager) installed on your computer.
 
-In the project directory, you can run:
+###Clone the repository or download the project files.
 
-### `npm start`
+Open a terminal or command prompt and navigate to the project directory.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+###Install the project dependencies by running the following command:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Copy code
+npm install
+After the installation is complete, start the development server:
+sql
+Copy code
+npm start
+The app will automatically open in your default web browser at http://localhost:3000.
+Components
 
-### `npm test`
+###The TodoList app consists of the following components:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+App.tsx: The main component that handles the overall layout and state management of the app. It includes the InputField component for adding new tasks and the TodoList component for displaying the active and completed tasks.
 
-### `npm run build`
+InputField.tsx: A component responsible for rendering the input field and the "GO" button to add new tasks. It receives the todo, setTodo, and handleAdd props from the parent App component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+TodoList.tsx: This component renders the list of active tasks and the completed tasks. It receives the todos, setTodos, CompletedTodos, and setCompletedTodos props from the parent App component. It uses the SingleTodo component to render each individual task.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+SingleTodo.tsx: A component responsible for rendering a single todo item. It allows the user to edit, delete, and mark the task as done. It uses the Draggable component from react-beautiful-dnd to enable drag-and-drop functionality for reordering tasks.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+models.ts: Contains the interface definition for the Todo type, which represents the structure of a single todo item.
 
-### `npm run eject`
+###Dependencies
+The project uses the following external dependencies:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+react: A JavaScript library for building user interfaces.
+react-dom: Provides DOM-specific methods that can be used at the top level of your app.
+react-scripts: A set of scripts and configuration used by Create React App.
+react-beautiful-dnd: A library to create smooth and powerful drag-and-drop experiences for your React applications.
+react-icons: Provides a set of customizable icons for your React applications.
