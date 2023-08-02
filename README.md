@@ -36,8 +36,8 @@ models.ts: Contains the interface definition for the Todo type, which represents
 ## Dependencies
 The project uses the following external dependencies:
 
-react: A JavaScript library for building user interfaces.
-react-dom: Provides DOM-specific methods that can be used at the top level of your app.
-react-scripts: A set of scripts and configuration used by Create React App.
-react-beautiful-dnd: A library to create smooth and powerful drag-and-drop experiences for your React applications.
-react-icons: Provides a set of customizable icons for your React applications.
+#### react: A JavaScript library for building user interfaces.
+#### react-dom: Provides DOM-specific methods that can be used at the top level of your app.
+#### react-scripts: A set of scripts and configuration used by Create React App.
+#### react-beautiful-dnd: A library to create smooth and powerful drag-and-drop experiences for your React applications.
+#### react-icons: Provides a set of customizable icons for your React applications.
