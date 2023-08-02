@@ -1,16 +1,16 @@
-##TodoList App in React and TypeScript
+# TodoList App in React and TypeScript
 This is a simple TodoList application built using React and TypeScript. The app allows you to add, edit, delete, and mark tasks as completed. It also includes drag-and-drop functionality to reorder tasks and move completed tasks to a separate section.
 
-###Instructions for Running the App
+## Instructions for Running the App
 To run the TodoList app locally on your machine, follow these steps:
 
 Make sure you have Node.js and npm (Node Package Manager) installed on your computer.
 
-###Clone the repository or download the project files.
+## Clone the repository or download the project files.
 
 Open a terminal or command prompt and navigate to the project directory.
 
-###Install the project dependencies by running the following command:
+## Install the project dependencies by running the following command:
 
 Copy code
 npm install
@@ -21,7 +21,7 @@ npm start
 The app will automatically open in your default web browser at http://localhost:3000.
 Components
 
-###The TodoList app consists of the following components:
+## The TodoList app consists of the following components:
 
 App.tsx: The main component that handles the overall layout and state management of the app. It includes the InputField component for adding new tasks and the TodoList component for displaying the active and completed tasks.
 
@@ -33,7 +33,7 @@ SingleTodo.tsx: A component responsible for rendering a single todo item. It all
 
 models.ts: Contains the interface definition for the Todo type, which represents the structure of a single todo item.
 
-###Dependencies
+## Dependencies
 The project uses the following external dependencies:
 
 react: A JavaScript library for building user interfaces.
